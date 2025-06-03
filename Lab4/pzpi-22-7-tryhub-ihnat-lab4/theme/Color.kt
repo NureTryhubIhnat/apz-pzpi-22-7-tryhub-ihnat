@@ -1,4 +1,4 @@
-package com.autocare.autocare1.ui.theme
+package com.healthcare.healthcare1.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
