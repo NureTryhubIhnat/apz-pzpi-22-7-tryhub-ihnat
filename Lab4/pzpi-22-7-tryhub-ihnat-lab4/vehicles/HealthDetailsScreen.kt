@@ -1,4 +1,4 @@
-package com.autocare.autocare1.ui.vehicles
+package com.healthcare.healthcare1.ui.vehicles
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -6,8 +6,8 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.autocare.autocare1.data.model.Vehicle
-import com.autocare.autocare1.ui.components.*
+import com.healthcare.healthcare1.data.model.Vehicle
+import com.healthcare.healthcare1.ui.components.*
 
 @Composable
 fun VehicleDetailsScreen(
