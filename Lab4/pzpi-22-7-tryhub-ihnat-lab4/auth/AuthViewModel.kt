@@ -1,8 +1,8 @@
-package com.autocare.autocare1.ui.auth
+package com.healthcare.healthcare1.ui.auth
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.autocare.autocare1.data.repository.AutoCareRepository
+import com.healthcare.healthcare1.data.repository.healthCareRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -11,7 +11,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class AuthViewModel @Inject constructor(
-    private val repository: AutoCareRepository
+    private val repository: healthCareRepository
 ) : ViewModel() {
 
     private val _authState = MutableStateFlow<AuthState>(AuthState.Initial)
