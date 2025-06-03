@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- App name -->
-    <string name="app_name">AutoCare</string>
+    <string name="app_name">HealthCare</string>
 
     <!-- General -->
-    <string name="welcome">Welcome to AutoCare</string>
+    <string name="welcome">Welcome to HealthCare</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
     <string name="email">Email</string>
@@ -19,7 +19,7 @@
     <string name="services">Services</string>
 
     <!-- Car Information -->
-    <string name="car_details">Car Details</string>
+    <string name="car_details">Health Details</string>
     <string name="car_make">Make</string>
     <string name="car_model">Model</string>
     <string name="car_year">Year</string>
