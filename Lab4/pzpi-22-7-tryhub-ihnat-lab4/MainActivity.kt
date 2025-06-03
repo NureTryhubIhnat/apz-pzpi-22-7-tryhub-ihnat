@@ -1,4 +1,4 @@
-package com.autocare.autocare1
+package com.healthcare.healthcare1
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,9 +9,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.autocare.autocare1.ui.auth.AuthScreen
-import com.autocare.autocare1.ui.vehicles.VehicleDetailsScreen
-import com.autocare.autocare1.ui.vehicles.VehicleListScreen
+import com.healthcare.healthcare1.ui.auth.AuthScreen
+import com.healthcare.healthcare1.ui.vehicles.VehicleDetailsScreen
+import com.healthcare.healthcare1.ui.vehicles.VehicleListScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -19,13 +19,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AutoCareApp()
+            healthCareApp()
         }
     }
 }
 
 @Composable
-fun AutoCareApp() {
+fun healthCareApp() {
     var token by remember { mutableStateOf<String?>(null) }
     val navController = rememberNavController()
 
