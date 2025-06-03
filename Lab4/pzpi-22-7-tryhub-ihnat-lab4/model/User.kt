@@ -1,4 +1,4 @@
-package com.autocare.autocare1.data.model
+package com.healthcare.autocare1.data.model
 
 data class User(
     val id: String = "",
