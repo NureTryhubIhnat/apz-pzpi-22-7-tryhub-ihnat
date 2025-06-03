@@ -1,4 +1,4 @@
-package com.autocare.autocare1.ui.theme
+package com.healthcare.healthcare1.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -34,7 +34,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun AutoCare1Theme(
+fun healthCare1Theme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
