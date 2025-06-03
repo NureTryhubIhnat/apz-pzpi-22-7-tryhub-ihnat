@@ -1,4 +1,4 @@
-package com.autocare.autocare1.data.model
+package com.healthcare.healthcare1.data.model
 
 import kotlin.random.Random
 
