@@ -1,4 +1,4 @@
-package com.autocare.autocare1.ui.auth
+package com.healthcare.healthcare1.ui.auth
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -7,7 +7,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.autocare.autocare1.ui.components.*
+import com.healthcare.healthcare1.ui.components.*
 
 @Composable
 fun AuthScreen(
@@ -43,14 +43,14 @@ fun AuthScreen(
             is AuthState.Loading -> LoadingSpinner()
             is AuthState.Error -> ErrorMessage((authState as AuthState.Error).message)
             else -> {
-                AutoCareTextField(
+                healthCareTextField(
                     value = email,
                     onValueChange = { email = it },
                     label = "Email",
                     modifier = Modifier.padding(bottom = 16.dp)
                 )
 
-                AutoCareTextField(
+                healthCareTextField(
                     value = password,
                     onValueChange = { password = it },
                     label = "Password",
@@ -58,7 +58,7 @@ fun AuthScreen(
                     modifier = Modifier.padding(bottom = 24.dp)
                 )
 
-                AutoCareButton(
+                healthCareButton(
                     onClick = {
                         if (isLogin) {
                             viewModel.login(email, password)
