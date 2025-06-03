@@ -1,4 +1,4 @@
-package com.autocare.autocare1.ui.components
+package com.healthcare.healthcare1.ui.components
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -33,7 +33,7 @@ fun ErrorMessage(message: String) {
 }
 
 @Composable
-fun AutoCareTextField(
+fun healthCareTextField(
     value: String,
     onValueChange: (String) -> Unit,
     label: String,
@@ -51,7 +51,7 @@ fun AutoCareTextField(
 }
 
 @Composable
-fun AutoCareButton(
+fun healthCareButton(
     onClick: () -> Unit,
     text: String,
     modifier: Modifier = Modifier,
