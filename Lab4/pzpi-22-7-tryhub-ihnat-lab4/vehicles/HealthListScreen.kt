@@ -1,4 +1,4 @@
-package com.autocare.autocare1.ui.vehicles
+package com.healthcare.healthcare1.ui.vehicles
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -9,8 +9,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.autocare.autocare1.data.model.Vehicle
-import com.autocare.autocare1.ui.components.*
+import com.healthcare.healthcare1.data.model.Vehicle
+import com.healthcare.healthcare1.ui.components.*
 
 @Composable
 fun VehicleListScreen(
@@ -75,19 +75,19 @@ fun VehicleListScreen(
                 title = { Text("Add Vehicle") },
                 text = {
                     Column {
-                        AutoCareTextField(
+                        healthCareTextField(
                             value = make,
                             onValueChange = { make = it },
                             label = "Make",
                             modifier = Modifier.padding(bottom = 8.dp)
                         )
-                        AutoCareTextField(
+                        healthCareTextField(
                             value = model,
                             onValueChange = { model = it },
                             label = "Model",
                             modifier = Modifier.padding(bottom = 8.dp)
                         )
-                        AutoCareTextField(
+                        healthCareTextField(
                             value = year,
                             onValueChange = { year = it },
                             label = "Year"
